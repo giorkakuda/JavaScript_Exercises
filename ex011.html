@@ -8,16 +8,21 @@
 </head>
 <body>
     <h1>Controle de Imigração</h1>
-    Nascionalidade <input type="text" name="txt" id="txt"> 
+    País <input type="text" name="txt" id="txt"> 
     <input type="button" value="verificar" onclick="calcular()">
-    <div id="nas"></div>
+    <div id="res"></div>
 
     <script>
         function calcular () {
             var txt = window.document.getElementById("txt")
             var res = window.document.getElementById("res")
-            var inf = txt.value
-            res.innerHTML = 'Seu pais de origem é '+inf 
+            var ori = txt.value
+            res.innerHTML = '<p>Seu pais de origem é '+ori+'</p>' 
+            if (ori == 'Brazil'|| ori == 'brazil'){
+                res.innerHTML += '<p>Portanto vc é brasileiro</p>'
+            } else {
+                res.innerHTML += '<p>Portanto vc é estrangeiro</p>'
+            }
     
 
 
