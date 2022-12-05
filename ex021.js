@@ -7,7 +7,6 @@ console.log('o vetor tem '+num.length+' elementos')
 var pos = num.indexOf(10)
 console.log('o numero 10 esta na posição '+ pos)
 
-
 /*
 let valores = [9,4,3,5,2,7]
 for (let pos=0; pos < valores.length; pos++){
